@@ -1,0 +1,15 @@
+{
+    "inertia_moment": 10.0,
+    "torque_curve": [
+        {"torque": 20, "speed": 0},
+        {"torque": 75, "speed": 75},
+        {"torque": 100, "speed": 150},
+        {"torque": 105, "speed": 200},
+        {"torque": 75, "speed": 250},
+        {"torque": 0, "speed": 300}
+    ],
+    "overheating_temp": 110.0,
+    "heating_coeff_by_torque": 0.01,
+    "heating_coeff_by_crankshaft_speed": 0.0001,
+    "cooling_coeff": 0.1
+}

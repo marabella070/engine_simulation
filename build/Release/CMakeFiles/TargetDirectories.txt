@@ -1,0 +1,3 @@
+/home/marabella/Programming/TestTask/build/Release/CMakeFiles/solution.dir
+/home/marabella/Programming/TestTask/build/Release/CMakeFiles/edit_cache.dir
+/home/marabella/Programming/TestTask/build/Release/CMakeFiles/rebuild_cache.dir
