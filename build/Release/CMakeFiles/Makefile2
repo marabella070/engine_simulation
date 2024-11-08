@@ -81,12 +81,12 @@ clean: CMakeFiles/solution.dir/clean
 CMakeFiles/solution.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marabella/Programming/TestTask/build/Release/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target solution"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marabella/Programming/TestTask/build/Release/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target solution"
 .PHONY : CMakeFiles/solution.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/solution.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marabella/Programming/TestTask/build/Release/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marabella/Programming/TestTask/build/Release/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/solution.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marabella/Programming/TestTask/build/Release/CMakeFiles 0
 .PHONY : CMakeFiles/solution.dir/rule

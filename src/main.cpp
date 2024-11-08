@@ -4,6 +4,8 @@
 
 #include "JsonReader/json_reader.h"
 
+#include "CSV_Saver/csv_saver.h"
+
 int main() {
     using namespace phycs_units;
 
@@ -46,6 +48,19 @@ int main() {
         auto result = test_stand::RunMaxPowerTest(engine);
         std::cout << "Max power: " << (result.first / 1000) << " kW\n";
         std::cout << "Crankshaft speed at maximum power: " << result.second << " rad/sec\n";
+    }
+
+    { // Third test(collects the values of M and V and save in csv file):
+        Engine engine(engine_config.inertia_moment, 
+                    engine_config.torque_curve, 
+                    engine_config.overheating_temp, 
+                    engine_config.heating_coeff_by_torque, 
+                    engine_config.heating_coeff_by_crankshaft_speed, 
+                    engine_config.cooling_coeff, 
+                    ambient_temp);
+        auto data = test_stand::RunTorqueSpeedDataCollection(engine);
+        SaveDataToCSV("simulation_data.csv", data);
+        SaveDataToCSV("original_file.csv", engine_config.torque_curve);
     }
 
     return 0;

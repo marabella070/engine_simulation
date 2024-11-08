@@ -41,4 +41,22 @@ std::pair<phycs_units::Power, phycs_units::CrankshaftSpeed> RunMaxPowerTest(Engi
     return std::pair{max_power, max_speed};
 }
 
+std::vector<std::pair<phycs_units::Torque, phycs_units::CrankshaftSpeed>> RunTorqueSpeedDataCollection(Engine& engine) {
+    constexpr double epsilon = 1e-9; // Set smallness for torque
+    float_second dt(2.1);            // Time step for simulation
+
+    std::vector<std::pair<phycs_units::Torque, phycs_units::CrankshaftSpeed>> data_points;
+
+    if (!engine.GetTorque().value_ && !engine.GetSpeed()) {
+        return data_points;
+    }
+
+    while (engine.GetTorque().value_ > epsilon) {
+        data_points.emplace_back(engine.GetTorque(), engine.GetSpeed());
+        engine.Update(dt);
+    }
+
+    return data_points;
+}
+
 } // test_stand namespace

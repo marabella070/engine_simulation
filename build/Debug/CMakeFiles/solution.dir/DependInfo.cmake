@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/marabella/Programming/TestTask/src/CSV_Saver/csv_saver.cpp" "CMakeFiles/solution.dir/src/CSV_Saver/csv_saver.cpp.o" "gcc" "CMakeFiles/solution.dir/src/CSV_Saver/csv_saver.cpp.o.d"
   "/home/marabella/Programming/TestTask/src/Engine/engine.cpp" "CMakeFiles/solution.dir/src/Engine/engine.cpp.o" "gcc" "CMakeFiles/solution.dir/src/Engine/engine.cpp.o.d"
   "/home/marabella/Programming/TestTask/src/JsonReader/json_reader.cpp" "CMakeFiles/solution.dir/src/JsonReader/json_reader.cpp.o" "gcc" "CMakeFiles/solution.dir/src/JsonReader/json_reader.cpp.o.d"
   "/home/marabella/Programming/TestTask/src/PhysicsUnits/physics_units.cpp" "CMakeFiles/solution.dir/src/PhysicsUnits/physics_units.cpp.o" "gcc" "CMakeFiles/solution.dir/src/PhysicsUnits/physics_units.cpp.o.d"

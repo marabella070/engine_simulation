@@ -129,6 +129,30 @@ solution/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/build
 .PHONY : solution/fast
 
+src/CSV_Saver/csv_saver.o: src/CSV_Saver/csv_saver.cpp.o
+.PHONY : src/CSV_Saver/csv_saver.o
+
+# target to build an object file
+src/CSV_Saver/csv_saver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/src/CSV_Saver/csv_saver.cpp.o
+.PHONY : src/CSV_Saver/csv_saver.cpp.o
+
+src/CSV_Saver/csv_saver.i: src/CSV_Saver/csv_saver.cpp.i
+.PHONY : src/CSV_Saver/csv_saver.i
+
+# target to preprocess a source file
+src/CSV_Saver/csv_saver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/src/CSV_Saver/csv_saver.cpp.i
+.PHONY : src/CSV_Saver/csv_saver.cpp.i
+
+src/CSV_Saver/csv_saver.s: src/CSV_Saver/csv_saver.cpp.s
+.PHONY : src/CSV_Saver/csv_saver.s
+
+# target to generate assembly for a file
+src/CSV_Saver/csv_saver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solution.dir/build.make CMakeFiles/solution.dir/src/CSV_Saver/csv_saver.cpp.s
+.PHONY : src/CSV_Saver/csv_saver.cpp.s
+
 src/Engine/engine.o: src/Engine/engine.cpp.o
 .PHONY : src/Engine/engine.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... solution"
+	@echo "... src/CSV_Saver/csv_saver.o"
+	@echo "... src/CSV_Saver/csv_saver.i"
+	@echo "... src/CSV_Saver/csv_saver.s"
 	@echo "... src/Engine/engine.o"
 	@echo "... src/Engine/engine.i"
 	@echo "... src/Engine/engine.s"
